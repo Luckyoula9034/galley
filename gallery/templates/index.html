@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>image gallery</h1>
+        <hr/>
+    </center>
+    {% for results in gallery %}
+    {{results.title}}
+    {{results.description}}
+    {{results.image.url}}
+    <img src="{{results.image.url}}" height="150" width="160" alt="{{results.title}}" title={{reulsts.title}}>
+    <hr/>
+    {% endfor%}
+</body>
+</html>
